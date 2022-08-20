@@ -1,0 +1,18 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  	: Jiaheng Wang
+Student ID#: 180562217
+Email      	: jwang522@myseneca.ca
+Section    	: NNN
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. Structures can save a set of different types of data in a heterogeneous collection.  Structure allows us to create user-defined data-type that store items with different data types. For example, I used PlayerInfo to store the information about the player and GameInfo to store the information about the game in this workshop. I can create variable "lives" as int and "symbol" as char. Structure helps us to simplify the main code, and it is easy to read. Also, it is easy to retrieve the data that we want. Therefore, structure can increase productivity when we code a big program. 
+
+2. To keep a history of games played, we can use parallel arrays to store different games played. Put the structures of different PlayerInfo in an array and put the structure of different GameInfo in the other parallel array. So that we can begin a new game to store in the next element in the array. Each game can correspond its own PlayerInfo and GameInfo to play. Another way to accomplish this enhancement is that to store the different games in the different files. When we start a new game, we should open a new file to store the history and results of each game. 
+
+3. The part I spent the most time working on is to realize the example of "1 0 0 1 1". According to the Introduction, we need to design the code to modify the MULTIPLE easily so we need to define a macro representing the value's multiple. However, I do not know how to change the example of " 1 0 0 1 1" if I change the MULTIPLE to another number. I thought to use random function, but it is still useless. And I tried to Google it but I did not get the answer. I tried to solve it for many hours, but I could not. Finally, I gave up but I was still struggling on it. Fortunately, when I attended to the Thursday class, Professor Selmys (John) taught it. I was enlightened at that time. I was so glad to learn how to code this part because I spent a lot of time on it.

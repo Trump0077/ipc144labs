@@ -1,0 +1,38 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Jiaheng Wang
+Student ID#: 180562217
+Email      : jwang522@myseneca.ca
+Section    : NNN
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. The different data types with different bytes need to be aligned in the C language. In this workshop, the "ReportData" structure needs 72 bytes according to the alignment. "int" needs to align with the "double" type, so it needs a byte offset to 8 bytes. Therefore, we can put the same type of variables together to save space. For example, we can put the three "int" type data together to save 8 bytes in these structs. In the function "displayReportData", there are two "int" are put together, so it takes only 64 bytes.
+
+2. We can use only the ReportData structure to represent both CatFoodInfo and ReportData because they have same elements in the structures.
+struct ReportData
+{
+    int sku;                //stock keeping unit
+    double price;           //price of product
+    int calories;           //per serving
+    double weight_lbs;
+    double weight_kg;
+    int weight_g;
+    double totalServings;
+    double cost;            //per serving
+    double caloriesCost;    //per serving
+};
+
+struct ReportData report[MAX_NUM_PRODUCTS] = { {0} };
+displayCatFoodHeader();
+	for (i = 0; i < num_products; i++)
+		displayCatFoodData(report[i].sku, report[i].price, report[i].calories, report[i].weight);
+displayReportHeader();
+	for (i = 0; i < num_products; i++)
+		displayReportData(report[i].sku, report[i].price, report[i].calories, report[i].weight_lbs, report[i].weight_kg, report[i].weight_g, report[i].totalServings, report[i].cost, report[i].caloriesCost);
+
+

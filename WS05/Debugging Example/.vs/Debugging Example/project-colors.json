@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4b4e2078-b378-4613-9e57-eabb95c0bbf2": {
+      "ProjectGuid": "4b4e2078-b378-4613-9e57-eabb95c0bbf2",
+      "DisplayName": "Debugging Example",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

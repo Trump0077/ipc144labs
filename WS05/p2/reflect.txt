@@ -1,0 +1,27 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #5
+Full Name  : Jiaheng Wang
+Student ID#: 180562217
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. The two selection constructs are "if" and "switch". For example, we need users to input the number of the month first,
+if (month == 11)
+	printf("NOV");
+if (month ==12)
+	printf("DEC");
+for the "switch" example,
+switch (month){
+	case 11: printf("NOV"); break;
+	case 12: printf("DEC"); break;
+}
+
+2. The three types of iteration constructs are "while", "do while", and "for". 
+I used "do while" loop for the validation routines because we need to verify if users input the correct number within the system range and repeat this process until users enter a valid year and month. We had better use "while" or "do while" loop when we do not know the exact number of iterations. Furtherover, we need to scan users' input of year and month at least once to judge data validity, so I choose "do while".
+
+3. In the testing, I used black box technique first. I entered some different numbers of years and months to verify if the program can identify either side of the boundaries of years and months. For example, I entered a year number less than 2012 such as 2011 or more than 2022 such as 2023. For the month, I checked 0 and 13. Also, I used white box testing as well. I went over each path through the code to check the logic errors. In the debugging, I used Microsoft's Visual Studio 2022 IDE to build, execute and debug. I inserted some breakpoints, and then executed the code step by step and observed the output to find the bugs. 
+In Visual Studio, most of the syntactic errors will be marked in the process of coding, and most of the semantic errors will be reported in the process of compiling. I just needed to fix errors according to the system hints first. And then, I tested my program and observed if the output matched the requirements. If not, I checked the code corresponding to my errors and fix them up.
